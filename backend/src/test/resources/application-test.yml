@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taskmanager_test
+    username: taskuser
+    password: taskpass
+  
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  
+jwt:
+  secret: test-secret-key-for-testing-purposes-must-be-at-least-256-bits-long
+  expiration: 86400000
+
+logging:
+  level:
+    com.taskmanager: INFO
+    org.springframework.security: INFO
+    org.hibernate.SQL: INFO
